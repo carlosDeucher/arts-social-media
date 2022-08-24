@@ -1,0 +1,142 @@
+.modal-wrapper{
+  position: fixed;
+  left: 0;
+  top:0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1; 
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-box{
+  width: auto;
+  height: auto;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 30px;
+  padding: 20px;
+}
+.header-of-modal{
+  margin-bottom:15px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.artist-logo{
+  margin-right: 8px;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center center;
+}
+ .modal-title{
+  font-size: 3.5rem;
+}
+
+/* CSS somente do modal art infos */
+.artist-profile{
+  display: flex;
+  align-items: center;
+  font-size: 2.2rem;
+}
+.art-photo{
+    
+  max-width: 85%;
+  max-height: 50vh;
+  margin: 30px auto;
+  border-radius: 10px;
+}
+.art-infos{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.art-infos .container{
+  display: block;
+  padding: 5px;
+  min-width: 150px;
+}
+.art-infos .description{
+  font-size: 1.5rem;
+}
+.art-infos .info{
+  font-size: 1.8rem;
+  border:1px solid var(--secundary-color);
+  color: var(--secundary-color);
+  max-width: 100%;
+  border-radius: 5px;
+  padding: 3px 5px
+  
+}
+
+
+
+
+/* CSS somente do modal add art */
+form{
+  display: flex;
+  flex-direction: column;
+}
+.input-text-group{
+  display: block;
+}
+.input-wrapper{
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.save-button-of-add-art{
+  width: 10rem;
+  height: 4rem;
+  padding: 0;
+  color: var(--bg-color);
+  background-color: var(--primary-color);
+  
+  margin:20px auto;
+  border:1px solid var(--secundary-color);
+  border-radius: 10px;
+  transition: all 500ms ;
+}
+.save-button-of-add-art:hover{
+  color: var(--primary-color);
+  background-color:var(--bg-color); 
+}
+.input-wrapper .label-modal-add-art{
+  display: block;
+  font-size: 1.5rem;
+}
+.input-wrapper .input-modal-add-art{
+  outline: none;
+  height: 3.7rem;
+  width: 100%;
+  font-size: 1.8rem;
+  border:1px solid var(--secundary-color);
+  color: var(--secundary-color);
+  background-color: var(--bg-color);
+  border-radius: 5px;
+  padding:4px 5px 3px 8px ;
+}
+
+
+@media (max-width:576px){
+  .art-infos .container{
+    width: 100%;
+  }
+  .modal-wrapper{
+    padding: 20px;
+  }
+  .modal-box{
+    width: 100%;
+  }
+ .modal-title{
+    font-size: 2.3rem;
+  }
+  .close-button{
+    font-size: 4rem;
+  }
+} 
